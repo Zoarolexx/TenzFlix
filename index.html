@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <title>TenzFlix - Streaming Film & Series</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Splash Screen -->
+<div id="splash-screen"><div class="splash-logo">TENZFLIX</div></div>
+
+<!-- Navbar -->
+<div class="navbar" id="navbar">
+    <div class="logo" data-link="/home">TENZFLIX</div>
+    <div class="nav-links">
+        <button class="nav-btn" data-link="/home">Beranda</button>
+        <button class="nav-btn" data-link="/movies">Film</button>
+        <button class="nav-btn" data-link="/tv">Series</button>
+        <button class="nav-btn" data-link="/favorites">Daftar Saya</button>
+        <button class="nav-btn" data-link="/history">Riwayat</button>
+    </div>
+    <div class="nav-right">
+        <i class="fas fa-search" data-link="/search"></i>
+        <i class="fas fa-info-circle" id="infoBtn"></i>
+    </div>
+</div>
+
+<!-- Pages Container -->
+<div id="app"></div>
+
+<!-- Developer Modal -->
+<div id="devModal" class="modal">
+    <div class="modal-content">
+        <h3 style="margin-bottom:15px;">ℹ️ Informasi</h3>
+        <p style="margin-bottom:15px;">Streaming menggunakan API TMDB dan berbagai server embed. Semua video diputar dalam halaman yang sama.</p>
+        <button id="clearCacheBtn" class="modal-btn"><i class="fas fa-trash-alt"></i> Hapus Cache</button>
+        <button id="closeModalBtn" class="modal-btn close">Tutup</button>
+    </div>
+</div>
+
+<script src="api.js"></script>
+<script src="router.js"></script>
+<script src="home.js"></script>
+<script src="detail.js"></script>
+<script src="watch.js"></script>
+<script src="search.js"></script>
+<script src="favorites.js"></script>
+<script src="history.js"></script>
+<script src="main.js"></script>
+</body>
+</html>n.js"></script>
+</body>
+</html>
